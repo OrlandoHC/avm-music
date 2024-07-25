@@ -48,6 +48,7 @@ header, footer {
 
 .avatar-icon {
   width: 200px;
+  border-radius: 50%;
 }
 
 .contacts {
