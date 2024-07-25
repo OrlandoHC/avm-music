@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>AVM Dj / Productor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon-bit.png">
+  </head>
+  <body>
+    <section class="main">
+      <div class="content">
+        <div class="avatar">
+          <img class="avatar-icon" src="images/avm.jpg" alt="avatar" />
+          <div class="contacts">
+            <a href="https://m.facebook.com/avmdj2023/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/avm.dj/"><i class="fa fa-instagram"></i></a>
+            <a href="https://soundcloud.com/avmsounds"><i class="fa fa-soundcloud"></i></a>
+            <a href="https://www.youtube.com/@avmthedj"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="description">
+          <h1> <span class="colored">Dj / Productor</span></h1>
+          <div class="numbers">
+            <div class="numbers-item">
+              <span class="infoNumbers">Saltillo</span>
+              <span>Coahuila MX</span>
+            </div>
+            <div class="numbers-item">
+              <span class="infoNumbers" >Electro</span>
+              <span>House Dubstep EDM</span>
+            </div>
+           <!-- <div class="numbers-item">
+              <span class="infoNumbers" id="he">0</span>
+              <span>seconds you are here</span>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>AVM Music 2024 </p>
+    </footer>
+
+    <script>
+      document.getElementById('ye').innerText = (+new Date().getFullYear() - 1988).toString();
+      document.getElementById('it').innerText = '>' + (+new Date().getFullYear() - 2008 - 1).toString();
+      document.getElementById('cy').innerText = new Date().getFullYear().toString();
+
+      const start = Date.now();
+      setInterval(function() {
+        const delta = Date.now() - start; // milliseconds elapsed since start
+        document.getElementById('he').innerText = Math.floor(delta / 1000); // in seconds
+      }, 1000); // update about every second
+    </script>
+  </body>
+</html>
